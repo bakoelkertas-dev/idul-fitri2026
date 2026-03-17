@@ -138,15 +138,19 @@ animation:jatuh 20s linear infinite;
 position:absolute;
 width:6px;
 height:6px;
-opacity:0.5;
-background:white;
-opacity:0.7;
 top:-10px;
+opacity:0.6;
+border-radius:2px;
 animation:fall linear infinite;
 }
 
 @keyframes fall{
-to{transform:translateY(110vh);}
+0%{
+transform:translateY(-10px) rotate(0deg);
+}
+100%{
+transform:translateY(110vh) rotate(360deg);
+}
 }
 
 .music-control{
@@ -297,13 +301,33 @@ Nyalakan Musik
 <script>
 
 /* confetti */
-for(let i=0;i<25;i++)
+/* confetti premium */
+const colors = ["#FFD700","#00FFAA","#FF6B6B","#FFFFFF","#A0E7E5"];
 
-let c=document.createElement("div");
-c.className="confetti";
+for(let i=0;i<25;i++){
 
-c.style.left=Math.random()*100+"%";
-c.style.animationDuration=(Math.random()*8+8)+"s";
+let c = document.createElement("div");
+c.className = "confetti";
+
+/* posisi random */
+c.style.left = Math.random()*100 + "%";
+
+/* warna random */
+c.style.background = colors[Math.floor(Math.random()*colors.length)];
+
+/* ukuran random */
+let size = Math.random()*6 + 4;
+c.style.width = size + "px";
+c.style.height = size + "px";
+
+/* bentuk random (kotak / bulat) */
+c.style.borderRadius = Math.random() > 0.5 ? "50%" : "2px";
+
+/* kecepatan jatuh lebih smooth */
+c.style.animationDuration = (Math.random()*8 + 8) + "s";
+
+/* delay biar tidak jatuh barengan */
+c.style.animationDelay = Math.random()*5 + "s";
 
 document.body.appendChild(c);
 
