@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@600&display=swap" rel="stylesheet">
+<title>Selamat Idul Fitri 2026</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+text-align:center;
+color:white;
+overflow:hidden;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* background lokal */
+.bg{
+position:fixed;
+width:100%;
+height:100%;
+background-image:url("img/bgfoto.jpg");
+background-size:cover;
+background-position:center;
+filter:brightness(40%);
+z-index:-2;
+}
+
+/* card */
+.card{
+background:linear-gradient(
+rgba(0,0,0,0.25),
+rgba(0,0,0,0.15)
+);
+padding:45px;
+border-radius:20px;
+backdrop-filter:blur(2px);
+max-width:520px;
+}
+
+/* tulisan arab */
+.arab{
+font-size:42px;
+margin-bottom:20px;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0 0 10px gold;}
+to{text-shadow:0 0 30px white;}
+}
+
+/* judul */
+.title{
+font-family:'Great Vibes', cursive;
+font-size:40px;
+color:#FFD700;
+opacity:0;
+transform:scale(0.8);
+animation:zoomIn 2s forwards;
+animation-delay:1s;
+letter-spacing:2px;
+text-shadow:
+0 0 10px rgba(255,215,0,0.8),
+0 0 20px rgba(255,215,0,0.6);
+}
+
+.tahun{
+font-family:'Cinzel', serif;
+font-size:28px;
+letter-spacing:6px;
+margin-top:5px;
+opacity:0;
+transform:scale(0.8);
+animation:zoomIn 2s forwards;
+animation-delay:1s;
+letter-spacing:2px;
+text-shadow:
+0 0 10px rgba(255,215,0,0.8),
+0 0 20px rgba(255,215,0,0.6);
+}
+@keyframes zoomIn{
+to{
+opacity:1;
+transform:scale(1);
+}
+}
+
+/* teks ucapan */
+.text{
+opacity:0;
+transform:translateY(30px);
+animation:fadeUp 2s forwards;
+}
+
+.text1{animation-delay:2s;}
+.text2{animation-delay:3.5s;}
+.text3{animation-delay:4.5s;}
+.text4{animation-delay:5.5s;}
+.text5{animation-delay:6s;}
+.text6{animation-delay:7s;}
+.text7{animation-delay:8s;}
+
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* ketupat */
+.ketupat{
+position:absolute;
+top:-100px;
+font-size:40px;
+animation:jatuh 12s linear infinite;
+}
+
+@keyframes jatuh{
+0%{transform:translateY(-100px) rotate(0deg);}
+100%{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* confetti */
+.confetti{
+position:absolute;
+width:8px;
+height:8px;
+background:white;
+opacity:0.7;
+top:-10px;
+animation:fall linear infinite;
+}
+
+@keyframes fall{
+to{transform:translateY(110vh);}
+}
+
+.music-control{
+position:fixed;
+bottom:25px;
+right:25px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:6px;
+z-index:999;
+}
+
+.music-label{
+background:rgba(0,0,0,0.6);
+padding:5px 10px;
+border-radius:8px;
+font-size:12px;
+backdrop-filter:blur(5px);
+}
+
+.music-buttons{
+display:flex;
+gap:10px;
+}
+
+.music-buttons button{
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:rgba(0,0,0,0.6);
+color:white;
+font-size:20px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.music-buttons button:hover{
+transform:scale(1.1);
+}
+
+.keluarga {
+  font-style: italic;
+  color: #ffffff;
+  font-size: 9px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<!-- ketupat animasi -->
+<div class="ketupat" style="left:10%;animation-duration:10s;">🟢</div>
+<div class="ketupat" style="left:30%;animation-duration:14s;">🟢</div>
+<div class="ketupat" style="left:50%;animation-duration:12s;">🟢</div>
+<div class="ketupat" style="left:70%;animation-duration:16s;">🟢</div>
+<div class="ketupat" style="left:85%;animation-duration:11s;">🟢</div>
+
+<div class="card">
+
+<div class="arab">
+الله أكبر الله أكبر الله أكبر
+</div>
+
+<div class="title">
+Selamat Idul Fitri
+</div>
+
+<div class="tahun">
+1447 H
+</div>
+
+<p class="text text1">
+Di hari yang suci ini, setelah sebulan penuh kita menjalani ibadah di bulan Ramadan,
+semoga setiap doa, puasa, dan amal ibadah yang kita lakukan diterima oleh Allah SWT.
+</p>
+
+<p class="text text2">
+Taqabbalallahu minna wa minkum,
+Minal Aidin Wal Faizin.
+Semoga kita semua kembali kepada fitrah, dengan hati yang bersih dan penuh keikhlasan.
+</p>
+
+<p class="text text3">
+Kami sekeluarga mengucapkan
+Selamat Hari Raya Idul Fitri 1447 Hijriah.
+Mohon maaf lahir dan batin atas segala khilaf, baik yang disengaja maupun yang tidak disengaja.
+</p>
+
+<p class="text text4">
+Semoga kebahagiaan, keberkahan, dan kedamaian senantiasa menyertai kita semua.
+Semoga silaturahmi tetap terjaga dan kasih sayang di antara kita semakin erat.
+</p>
+
+<p class="text text5">
+Selamat merayakan Idul Fitri bersama keluarga tercinta.
+Semoga Allah SWT selalu melimpahkan rahmat dan keberkahan-Nya kepada kita semua.
+</p>
+
+<p class="text text6">Bakoel Kertas</p>
+<p class="text text7">
+<font color="yellow" size="2">
+        <i>Pak Sukardi-Ibu Novia- Adek Nizar</i>
+    </font>
+</p>
+</div>
+
+<!-- AUDIO -->
+<audio id="musik" loop>
+  <source src="audio/musik.mp3" type="audio/mpeg">
+</audio>
+
+<!-- KONTROL MUSIK -->
+<audio id="musik" autoplay loop>
+  <source src="audio/music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-control">
+
+<div class="music-label">
+Nyalakan Musik
+</div>
+
+<div class="music-buttons">
+<button id="playBtn" onclick="toggleMusic()">⏸</button>
+<button id="muteBtn" onclick="toggleMute()">🔊</button>
+</div>
+
+</div>
+<script>
+
+/* confetti */
+for(let i=0;i<70;i++){
+
+let c=document.createElement("div");
+c.className="confetti";
+
+c.style.left=Math.random()*100+"%";
+c.style.animationDuration=(Math.random()*5+5)+"s";
+
+document.body.appendChild(c);
+
+}
+let musik = document.getElementById("musik");
+let playBtn = document.getElementById("playBtn");
+let muteBtn = document.getElementById("muteBtn");
+
+/* coba autoplay saat halaman dibuka */
+window.addEventListener("load", () => {
+musik.play().catch(()=>{
+playBtn.innerHTML="▶";
+});
+});
+
+/* tombol play pause */
+function toggleMusic(){
+
+if(musik.paused){
+musik.play();
+playBtn.innerHTML="⏸";
+}else{
+musik.pause();
+playBtn.innerHTML="▶";
+}
+
+}
+
+/* tombol mute */
+function toggleMute(){
+
+musik.muted = !musik.muted;
+
+if(musik.muted){
+muteBtn.innerHTML="🔇";
+}else{
+muteBtn.innerHTML="🔊";
+}
+
+}
+
+</script>
+
+</body>
+</html>
